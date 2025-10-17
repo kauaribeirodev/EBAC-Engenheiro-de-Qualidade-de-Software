@@ -1,6 +1,10 @@
-describe('Abrindo site', () => {
-  it('passes', () => {
+describe('Funcionalidade Login', () => {
+
+  beforeEach(() => {
     cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
+  });
+
+  it('passes', () => {
     cy.get('[name="username"]').type('teste@teste123.com');
     cy.get('#password').type('teste@teste123.');
     cy.get('#customer_login [name="login"]').click();
@@ -9,16 +13,14 @@ describe('Abrindo site', () => {
   })
 
   it('Deve exibir uma mensagem de erro ao inserir senha inválida', () => {
-    cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
     cy.get('[name="username"]').type('teste@teste123.com');
     cy.get('#password').type('teste@teste123');
     cy.get('#customer_login [name="login"]').click();
-
+    
     cy.get('.woocommerce-error').should('contain', 'Erro: A senha')
   })
 
     it('Deve exibir uma mensagem de erro ao inserir email inválido', () => {
-    cy.visit('http://lojaebac.ebaconline.art.br/minha-conta/')
     cy.get('[name="username"]').type('teste@teste123.comm');
     cy.get('#password').type('teste@teste123.');
     cy.get('#customer_login [name="login"]').click();
