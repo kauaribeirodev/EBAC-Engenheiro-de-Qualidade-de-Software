@@ -22,4 +22,13 @@ describe("Funcionalidade Pré Cadastro", () => {
       "Detalhes da conta modificados com sucesso"
     );
   });
+
+  it.only("Deve completar o pré-cadastro com sucesso usando Comandos Customizados", () => {
+    cy.preCadastro(
+      faker.internet.email,
+      faker.internet.password,
+      faker.person.firstName,
+      faker.person.lastName
+    );
+  });
 });
