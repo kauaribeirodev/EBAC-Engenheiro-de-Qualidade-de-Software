@@ -23,12 +23,16 @@ describe("Funcionalidade Pré Cadastro", () => {
     );
   });
 
-  it.only("Deve completar o pré-cadastro com sucesso usando Comandos Customizados", () => {
+  it("Deve completar o pré-cadastro com sucesso usando Comandos Customizados", () => {
     cy.preCadastro(
-      faker.internet.email,
-      faker.internet.password,
-      faker.person.firstName,
-      faker.person.lastName
+      faker.internet.email(),
+      faker.internet.password(),
+      faker.person.firstName(),
+      faker.person.lastName()
+    );
+    cy.get(".woocommerce-message").should(
+      "contain",
+      "Detalhes da conta modificados com sucesso"
     );
   });
 });

@@ -42,3 +42,13 @@ Cypress.Commands.add("preCadastro", (email, senha, nome, sobrenome) => {
   cy.get("#account_last_name").type(sobrenome);
   cy.get('#main [name="save_account_details"]').click();
 });
+
+Cypress.Commands.add("addProducts", (produto, quantidade) => {
+  cy.get(".product-block").contains(produto).click();
+  cy.get(".button-variable-item-34").click();
+  cy.get(".button-variable-item-Black").click();
+  cy.get(".input-text").clear().type(quantidade);
+  cy.get(".single_add_to_cart_button").click();
+
+  cy.get("#cart").should("contain", quantidade);
+});

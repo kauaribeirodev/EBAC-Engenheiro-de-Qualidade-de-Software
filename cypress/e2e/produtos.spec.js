@@ -12,7 +12,7 @@ describe("Funcionalidade Página de produtos", () => {
       .click();
   });
 
-  it.only("Deve selecionar um produto da lista", () => {
+  it("Deve selecionar um produto da lista", () => {
     let quantidade = 6;
 
     cy.get(".product-block").contains("Arcadio Gym Short").click();
@@ -22,5 +22,9 @@ describe("Funcionalidade Página de produtos", () => {
     cy.get(".single_add_to_cart_button").click();
 
     cy.get("#cart").should("contain", quantidade);
+  });
+
+  it("Deve adicinar produtos ao carrinho - Usando Comando customizado", () => {
+    cy.addProducts("Arcadio Gym Short", 8);
   });
 });
