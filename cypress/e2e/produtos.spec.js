@@ -16,7 +16,8 @@ describe("Funcionalidade Página de produtos", () => {
     let quantidade = 6;
 
     cy.get(".product-block").contains("Arcadio Gym Short").click();
-    cy.get(".button-variable-item-34").click();
+    cy.get(".button-variable-item-33").click();
+    cy.wait(500);
     cy.get(".button-variable-item-Black").click();
     cy.get(".input-text").clear().type(quantidade);
     cy.get(".single_add_to_cart_button").click();
