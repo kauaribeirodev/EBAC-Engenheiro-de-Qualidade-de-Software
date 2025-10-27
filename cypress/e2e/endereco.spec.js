@@ -1,5 +1,6 @@
 import EnderecoPage from "../support/page-objects/endereco.page";
 import { faker } from "@faker-js/faker";
+const dadosEndereco = require("../fixtures/endereco.json");
 
 describe("Funcionalidade Endereços - Faturameto e Entrega", () => {
   beforeEach(() => {
@@ -23,7 +24,19 @@ describe("Funcionalidade Endereços - Faturameto e Entrega", () => {
       faker.internet.email()
     );
   });
-  it.only("Deve fazer o cadastro de faturamento com sucesso - Usando Arquivo de dados", () => {
-    EnderecoPage.editarEnderecoFaturamento();
+  it("Deve fazer o cadastro de faturamento com sucesso - Usando Arquivo de dados", () => {
+    EnderecoPage.editarEnderecoFaturamento(
+      dadosEndereco[0].nome,
+      dadosEndereco[0].sobrenome,
+      dadosEndereco[0].empresa,
+      dadosEndereco[0].pais,
+      dadosEndereco[0].endereco,
+      dadosEndereco[0].numero,
+      dadosEndereco[0].cidade,
+      dadosEndereco[0].estado,
+      dadosEndereco[0].cep,
+      dadosEndereco[0].telefone,
+      dadosEndereco[0].email
+    );
   });
 });
