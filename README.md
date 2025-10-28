@@ -14,41 +14,41 @@ Este repositório reúne os projetos desenvolvidos por mim, **Kauã Ribeiro**, d
 
 O curso é composto por 35 módulos que abordam desde os fundamentos da qualidade de software até práticas avançadas de automação, integração contínua e segurança. A seguir, a lista completa dos módulos:
 
-1. 🧭 Módulo 0 - Introdução  
-2. 👨‍💼 Módulo 1 - O profissional de Qualidade e suas habilidades  
-3. 🌐 Módulo 2 - Qualidade de Software e Network  
-4. 🧪 Módulo 3 - Fundamentos do teste  
-5. 🛠️ Módulo 4 - Técnicas de testes  
-6. 📋 Módulo 5 - Planejamento e estratégia de teste  
-7. 🚀 Módulo 6 - Metodologias ágeis e Teste ágil  
-8. 🔄 Módulo 7 - Fluxo de trabalho do ágil  
-9. 🧠 Módulo 8 - Técnicas de teste Ágil  
-10. 🖥️ Módulo 9 - Testes de UI (user interface)  
-11. 🗂️ Módulo 10 - GIT  
-12. ⚙️ Módulo 11 - Automação de UI com Cypress - Parte 1  
-13. ⚙️ Módulo 12 - Automação de UI com Cypress - Parte 2  
-14. 🔌 Módulo 13 - Testes de API e Contrato  
-15. 🧬 Módulo 14 - Testes Automatizados de API REST  
-16. 🧰 Módulo 15 - DevOps  
-17. 📱 Módulo 16 - Testes Mobile - Parte 1  
-18. 📱 Módulo 17 - Testes Mobile - Parte 2  
-19. 📊 Módulo 18 - Testes de performance  
-20. 🗃️ Módulo 19 - Banco de dados SQL e noSQL  
-21. 💻 Módulo 20 - Programando com Javascript  
-22. 🧪 Módulo 21 - Testes de unidade  
-23. ⚙️ Módulo 22 - Automação de UI com Cypress - Indo além do básico  
-24. 🧩 Módulo 23 - Automação de UI com Cypress - Tornando o seu projeto completo  
-25. 🔍 Módulo 24 - Automação de API Conhecendo GraphQL Supertest e PactJS  
-26. 🧑‍🔬 Módulo 25 - Escolhendo Linguagem e Frameworks  
-27. 🔁 Módulo 26 - Testes em Integração Contínua  
-28. 🐳 Módulo 27 - Docker for Testers  
-29. 📈 Módulo 28 - Testes de Performance  
-30. 🍏 Módulo 29 - Testando Aplicações iOS  
-31. 🔄 Módulo 30 - Testes Mobile em Continuous Integration  
-32. 📐 Módulo 31 - Métricas de Qualidade  
-33. 🗄️ Módulo 32 - Banco de dados SQLnoSQL  
-34. 🔐 Módulo 33 - Testes de Segurança  
-35. 🏁 Módulo 34 - Projeto Final
+- 🧭 Módulo 0 - Introdução  
+- 👨‍💼 Módulo 1 - O profissional de Qualidade e suas habilidades  
+- 🌐 Módulo 2 - Qualidade de Software e Network  
+- 🧪 Módulo 3 - Fundamentos do teste  
+- 🛠️ Módulo 4 - Técnicas de testes  
+- 📋 Módulo 5 - Planejamento e estratégia de teste  
+- 🚀 Módulo 6 - Metodologias ágeis e Teste ágil  
+- 🔄 Módulo 7 - Fluxo de trabalho do ágil  
+- 🧠 Módulo 8 - Técnicas de teste Ágil  
+- 🖥️ Módulo 9 - Testes de UI (user interface)  
+- 🗂️ Módulo 10 - GIT  
+- ⚙️ Módulo 11 - Automação de UI com Cypress - Parte 1  
+- ⚙️ Módulo 12 - Automação de UI com Cypress - Parte 2  
+- 🔌 Módulo 13 - Testes de API e Contrato  
+- 🧬 Módulo 14 - Testes Automatizados de API REST  
+- 🧰 Módulo 15 - DevOps  
+- 📱 Módulo 16 - Testes Mobile - Parte 1  
+- 📱 Módulo 17 - Testes Mobile - Parte 2  
+- 📊 Módulo 18 - Testes de performance  
+- 🗃️ Módulo 19 - Banco de dados SQL e noSQL  
+- 💻 Módulo 20 - Programando com Javascript  
+- 🧪 Módulo 21 - Testes de unidade  
+- ⚙️ Módulo 22 - Automação de UI com Cypress - Indo além do básico  
+- 🧩 Módulo 23 - Automação de UI com Cypress - Tornando o seu projeto completo  
+- 🔍 Módulo 24 - Automação de API Conhecendo GraphQL Supertest e PactJS  
+- 🧑‍🔬 Módulo 25 - Escolhendo Linguagem e Frameworks  
+- 🔁 Módulo 26 - Testes em Integração Contínua  
+- 🐳 Módulo 27 - Docker for Testers  
+- 📈 Módulo 28 - Testes de Performance  
+- 🍏 Módulo 29 - Testando Aplicações iOS  
+- 🔄 Módulo 30 - Testes Mobile em Continuous Integration  
+- 📐 Módulo 31 - Métricas de Qualidade  
+- 🗄️ Módulo 32 - Banco de dados SQLnoSQL  
+- 🔐 Módulo 33 - Testes de Segurança  
+- 🏁 Módulo 34 - Projeto Final
 
 ---
 
