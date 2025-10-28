@@ -34,23 +34,6 @@ O curso é composto por 34 módulos que abordam desde os fundamentos da qualidad
 
 Atualmente estou no **Módulo 13 - Testes de API e Contrato**.
 
-### Módulos Concluídos:
-
-- [x] Módulo 0 - Introdução
-- [x] Módulo 1 - O profissional de Qualidade e suas habilidades
-- [x] Módulo 2 - Qualidade de Software e Network
-- [x] Módulo 3 - Fundamentos do teste
-- [x] Módulo 4 - Técnicas de testes
-- [x] Módulo 5 - Planejamento e estratégia de teste
-- [x] Módulo 6 - Metodologias ágeis e Teste ágil
-- [x] Módulo 7 - Fluxo de trabalho do ágil
-- [x] Módulo 8 - Técnicas de teste Ágil
-- [x] Módulo 9 - Testes de UI (user interface)
-- [x] Módulo 10 - GIT
-- [x] Módulo 11 - Automação de UI com Cypress - Parte 1
-- [x] Módulo 12 - Automação de UI com Cypress - Parte 2
-- [ ] Módulo 13 - Testes de API e Contrato ← **em andamento**
-
 ---
 
 ## 📌 O que estou aprendendo agora
