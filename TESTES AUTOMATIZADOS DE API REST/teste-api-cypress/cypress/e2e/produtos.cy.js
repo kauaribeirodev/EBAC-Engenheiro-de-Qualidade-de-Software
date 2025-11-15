@@ -1,4 +1,11 @@
 describe("Teste da Funcionalidade Produtos", () => {
+  let token;
+  before(() => {
+    cy.token("fulano@qa.com", "teste").then((tkn) => {
+      token = tkn;
+    });
+  });
+
   it("Listar Produtos", () => {
     cy.request({
       method: "GET",
@@ -12,24 +19,35 @@ describe("Teste da Funcionalidade Produtos", () => {
   });
 
   it("Cadastrar Produto", () => {
+    let produto = `Produto Teste ${Math.floor(Math.random() * 100)}`;
     cy.request({
       method: "POST",
       url: "produtos",
       body: {
-        nome: "Produto Teste",
-        // Criar produto dinamicamente
+        nome: produto,
         preco: 109,
         descricao: "Produto de Teste",
         quantidade: 2,
       },
       headers: {
-        authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImZ1bGFub0BxYS5jb20iLCJwYXNzd29yZCI6InRlc3RlIiwiaWF0IjoxNzYyOTU3NzA0LCJleHAiOjE3NjI5NTgzMDR9.hCjjSa8AVLcBSdY2NQxVx4lsRG4KLBgqmYIg2DuDAYU",
-        //Gerar token dinamicamente
+        authorization: token,
       },
     }).then((response) => {
       expect(response.status).to.equal(201);
       expect(response.body.message).to.equal("Cadastro realizado com sucesso");
+    });
+  });
+
+  it("Deve validar mensagem de erro ao cadastrar produto repetido", () => {
+    cy.cadastrarProduto(
+      token,
+      "Produto Teste 1",
+      110,
+      "produto de teste",
+      5
+    ).then((response) => {
+      expect(response.status).to.equal(400);
+      expect(response.body.message).to.equal("Já existe produto com esse nome");
     });
   });
 });
